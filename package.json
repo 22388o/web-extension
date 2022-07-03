@@ -1,0 +1,13 @@
+{
+  "name": "web-extension",
+  "packageManager": "yarn@3.2.1",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^4.7.4"
+  }
+}

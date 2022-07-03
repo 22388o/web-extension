@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "skipLibCheck": true,
+    "target": "ES2020",
+    "strict": true
+  },
+  "exclude": ["node_modules"]
+}
