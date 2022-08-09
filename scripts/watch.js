@@ -1,4 +1,4 @@
 const { build } = require("esbuild");
 
 const { config } = require("./common");
-build(config);
+build(Object.assign(config, { watch: true }));

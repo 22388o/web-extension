@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #000;
+
+}
+
+.viewport  {
+  height: 598px;
+  width: 400px;
+}
+
+
