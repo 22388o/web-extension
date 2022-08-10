@@ -169,15 +169,15 @@ class Storage implements CredentialStore {
 class LND {
   private lnc = new LightningNodeConnect({ credentialStore: new Storage() });
 
-  async connect(phrase: string, password: string) {
+  connect(phrase: string, password: string) {
     this.lnc.credentials.pairingPhrase = phrase;
     this.lnc.credentials.password = password;
-    await this.lnc.connect();
+    return this.lnc.connect().catch((err) => console.log(err));
   }
 
-  async login(password: string) {
+  login(password: string) {
     this.lnc.credentials.password = password;
-    await this.lnc.connect();
+    return this.lnc.connect();
   }
 
   client() {

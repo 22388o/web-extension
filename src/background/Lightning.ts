@@ -49,6 +49,7 @@ export default class Lightning {
   }
 
   async connect(data: ConnectRequest) {
+    console.log("data: ", data);
     return lnd.connect(data.phrase, data.password);
   }
 

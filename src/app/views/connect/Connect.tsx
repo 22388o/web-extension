@@ -8,15 +8,21 @@ import { Paths } from "../../router";
 export default function Connect() {
   const navigate = useNavigate();
 
-  const phrase = useInput();
-  const password = useInput();
+  const phrase = useInput(
+    "govern best true bachelor achieve return slush duck armed course"
+  );
+
+  const password = useInput("sports");
 
   const wallet = useWallet();
 
   const onClickConnect = () => {
-    wallet.connect(phrase.value, password.value).then(() => {
-      navigate(Paths.Home);
-    });
+    wallet
+      .connect(phrase.value, password.value)
+      .then(() => {
+        navigate(Paths.Home);
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
